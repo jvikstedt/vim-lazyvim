@@ -24,16 +24,3 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufNewFile" }, {
   pattern = "*.gdshaderinc",
   command = "set filetype=gdshader",
 })
-
--- Telescope, allow one escape press to leave telescope window
-local actions = require("telescope.actions")
-
-require("telescope").setup({
-  defaults = {
-    mappings = {
-      i = {
-        ["<esc>"] = actions.close,
-      },
-    },
-  },
-})

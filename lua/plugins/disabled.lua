@@ -3,4 +3,5 @@ return {
   { "folke/flash.nvim", enabled = false },
   { "nvimdev/dashboard-nvim", enabled = false },
   { "echasnovski/mini.pairs", enabled = false },
+  { "nvim-lualine/lualine.nvim", enabled = false },
 }
