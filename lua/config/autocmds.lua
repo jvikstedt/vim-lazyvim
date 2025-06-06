@@ -24,3 +24,12 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufNewFile" }, {
   pattern = "*.gdshaderinc",
   command = "set filetype=gdshader",
 })
+
+vim.api.nvim_create_autocmd("BufReadPost", {
+  pattern = { "*.mp3", "*.wav", "*.flac", "*.ogg", "*.m4a" },
+  callback = function(args)
+    local file = vim.fn.expand("<afile>")
+    vim.fn.jobstart({ "xdg-open", file }, { detach = true })
+    vim.cmd("bd!") -- Optional: close the buffer after launching
+  end,
+})
