@@ -16,7 +16,7 @@ require("lazy").setup({
     -- { import = "lazyvim.plugins.extras.lang.json" },
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
     -- import/override with your plugins
-    { "mrjones2014/smart-splits.nvim", build = "./kitty/install-kittens.bash", commit = "e8ef796" },
+    { "mrjones2014/smart-splits.nvim", build = "./kitty/install-kittens.bash" },
     { import = "plugins" },
   },
   defaults = {
