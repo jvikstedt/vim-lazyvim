@@ -33,3 +33,8 @@ vim.api.nvim_create_autocmd("BufReadPost", {
     vim.cmd("bd!") -- Optional: close the buffer after launching
   end,
 })
+
+-- Create command to format markdown tables
+vim.api.nvim_create_user_command("MarkdownFormatTable", function(opts)
+  vim.cmd("'<,'>!column -t -s '|' -o '|'")
+end, { range = true })
