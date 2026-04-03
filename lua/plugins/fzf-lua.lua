@@ -1,5 +1,16 @@
 return {
   "ibhagwan/fzf-lua",
+  opts = {
+    winopts = {
+      width = 1.0,
+      height = 0.8,
+      row = 0.5,
+      col = 0.5,
+      preview = {
+        layout = "vertical",
+      },
+    },
+  },
   keys = {
     {
       "<c-p>",

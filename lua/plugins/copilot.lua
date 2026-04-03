@@ -1,12 +1,13 @@
 return {
   "zbirenbaum/copilot.lua",
-  opts = {
-    filetypes = {
-      javascript = true,
-      typescript = true,
-      rust = true,
-      gdscript = true,
-      ["*"] = false,
-    },
-  },
+  enabled = false,
+  -- opts = {
+  --   filetypes = {
+  --     javascript = true,
+  --     typescript = true,
+  --     rust = true,
+  --     gdscript = true,
+  --     ["*"] = false,
+  --   },
+  -- },
 }
